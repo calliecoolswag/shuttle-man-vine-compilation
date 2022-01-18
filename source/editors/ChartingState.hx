@@ -264,7 +264,7 @@ class ChartingState extends MusicBeatState
 		if(curSection >= _song.notes.length) curSection = _song.notes.length - 1;
 
 		FlxG.mouse.visible = true;
-		//FlxG.save.bind('funkin', 'shuttlemanreal');
+		//FlxG.save.bind('funkin', 'fnf vs shuttle man');
 
 		tempBpm = _song.bpm;
 
