@@ -1,0 +1,116 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "ninja... ya! he's my fucking guy",
+			"boxState": "normal",
+			"speed": 0.10,
+			"portrait": "little-man"
+		},
+		{
+			"expression": "talk",
+			"text": "OMG OMG hiiiiiiiii cousin little :D",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "wait shuttle mna what the fuck are you doing",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},
+		{
+			"expression": "talk",
+			"text": "whats wwrong",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "stfu",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "any moment now this blue haired freak can and will make an attempt on your life, like he has done to me.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "j",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},		
+		{
+			"expression": "talk",
+			"text": "huuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "hhhhhhhhhhhh?????????????",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "why haven't you told me this?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "i havent been the same since.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "every day and night i am consumed with paranoia and fear, wondering what the next day will bring as i remain locked in my home, afraid of the outside world.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "i began to take on alcohol as an escape, and yet the potency of alcohol does not soothe nor strengthen the feeling, it only stagnates it. i truly wish i could feel something else. i am stuck in an eternity of",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "wanna play badmibnton with us",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},	
+		{
+			"expression": "talk",
+			"text": "",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},	
+		{
+			"expression": "talk",
+			"text": "bammminon :D",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		}	
+	]
+}

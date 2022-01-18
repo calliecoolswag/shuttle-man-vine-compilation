@@ -1,0 +1,24 @@
+{
+	"position": [
+		210,
+		210
+	],
+	"dialogue_pos": "left",
+	"scale": 2.85,
+	"image": "Little_Man_talk_not_as_cool_but_still_pretty_cool",
+	"animations": [
+		{
+			"idle_offsets": [
+				20,
+				-78
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "Little man what",
+			"loop_name": "Little man swag"
+		}
+	]
+}

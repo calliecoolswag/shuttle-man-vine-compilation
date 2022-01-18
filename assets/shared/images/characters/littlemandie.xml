@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="little man die.png">
+<SubTexture name="little man die lol he dying0000" x="0" y="0" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0001" x="205" y="0" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0002" x="410" y="0" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0003" x="615" y="0" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0004" x="820" y="0" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0005" x="0" y="180" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0006" x="205" y="180" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0007" x="410" y="180" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0008" x="615" y="180" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0009" x="820" y="180" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0010" x="0" y="360" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0011" x="205" y="360" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0012" x="410" y="360" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die lol he dying0013" x="615" y="360" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0000" x="820" y="360" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0001" x="0" y="540" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0002" x="205" y="540" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0003" x="410" y="540" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0004" x="615" y="540" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0005" x="820" y="540" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0006" x="0" y="720" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0007" x="205" y="720" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0008" x="410" y="720" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0009" x="615" y="720" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0010" x="820" y="720" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0011" x="0" y="900" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0012" x="205" y="900" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0013" x="410" y="900" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0014" x="615" y="900" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+<SubTexture name="little man die vomit0015" x="820" y="900" width="205" height="180" frameX="0" frameY="0" frameWidth="205" frameHeight="180" />
+</TextureAtlas>

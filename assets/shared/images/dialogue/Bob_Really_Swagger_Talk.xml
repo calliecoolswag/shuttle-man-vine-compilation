@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Bob_Really_Swagger_Talk.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Bob Idle0000" x="0" y="0" width="314" height="299"/>
+	<SubTexture name="Bob Idle0001" x="314" y="0" width="314" height="299"/>
+	<SubTexture name="Bob Idle0002" x="628" y="0" width="314" height="299"/>
+	<SubTexture name="Bob Idle0003" x="942" y="0" width="314" height="299"/>
+	<SubTexture name="Bob Talk0000" x="0" y="0" width="314" height="299" frameX="0" frameY="-2" frameWidth="314" frameHeight="299"/>
+	<SubTexture name="Bob Talk0001" x="1256" y="0" width="313" height="299" frameX="0" frameY="-2" frameWidth="340" frameHeight="301"/>
+	<SubTexture name="Bob Talk0002" x="1569" y="0" width="326" height="297" frameX="0" frameY="-4" frameWidth="340" frameHeight="301"/>
+	<SubTexture name="Bob Talk0003" x="0" y="299" width="314" height="288" frameX="0" frameY="-13" frameWidth="340" frameHeight="301"/>
+	<SubTexture name="Bob Talk0004" x="314" y="299" width="325" height="301" frameX="0" frameY="0" frameWidth="340" frameHeight="301"/>
+	<SubTexture name="Bob Talk0005" x="639" y="299" width="325" height="282" frameX="0" frameY="-19" frameWidth="340" frameHeight="301"/>
+	<SubTexture name="Bob Talk0006" x="964" y="299" width="340" height="293" frameX="0" frameY="-8" frameWidth="340" frameHeight="301"/>
+	<SubTexture name="Bob Talk0007" x="0" y="0" width="314" height="299" frameX="0" frameY="-2" frameWidth="314" frameHeight="299"/>
+	<SubTexture name="Fuck You0000" x="1304" y="299" width="375" height="439" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0001" x="0" y="738" width="413" height="403" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0002" x="413" y="738" width="427" height="376" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0003" x="840" y="738" width="436" height="337" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0004" x="1276" y="738" width="435" height="313" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0005" x="0" y="1141" width="431" height="299" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0006" x="431" y="1141" width="433" height="299" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0007" x="864" y="1141" width="433" height="299" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0008" x="1297" y="1141" width="430" height="299" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Fuck You0009" x="1297" y="1141" width="430" height="299" frameX="0" frameY="0" frameWidth="436" frameHeight="439"/>
+	<SubTexture name="Talk what the fuck0000" x="0" y="1440" width="325" height="264" frameX="0" frameY="0" frameWidth="331" frameHeight="271"/>
+	<SubTexture name="Talk what the fuck0001" x="0" y="1440" width="325" height="264" frameX="0" frameY="0" frameWidth="331" frameHeight="271"/>
+	<SubTexture name="Talk what the fuck0002" x="325" y="1440" width="321" height="256" frameX="-4" frameY="-10" frameWidth="331" frameHeight="271"/>
+	<SubTexture name="Talk what the fuck0003" x="325" y="1440" width="321" height="256" frameX="-4" frameY="-10" frameWidth="331" frameHeight="271"/>
+	<SubTexture name="Talk what the fuck0004" x="646" y="1440" width="328" height="254" frameX="-3" frameY="-17" frameWidth="331" frameHeight="271"/>
+	<SubTexture name="Talk what the fuck0005" x="646" y="1440" width="328" height="254" frameX="-3" frameY="-17" frameWidth="331" frameHeight="271"/>
+	<SubTexture name="Talk what the fuck0006" x="974" y="1440" width="313" height="267" frameX="-3" frameY="-4" frameWidth="331" frameHeight="271"/>
+</TextureAtlas>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Little Man talk not as cool but still pretty cool.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Little man swag0000" x="0" y="0" width="98" height="115" frameX="0" frameY="-22" frameWidth="98" frameHeight="138"/>
+	<SubTexture name="Little man swag0001" x="0" y="0" width="98" height="115" frameX="0" frameY="-22" frameWidth="98" frameHeight="138"/>
+	<SubTexture name="Little man swag0002" x="98" y="0" width="98" height="127" frameX="0" frameY="-11" frameWidth="98" frameHeight="138"/>
+	<SubTexture name="Little man swag0003" x="98" y="0" width="98" height="127" frameX="0" frameY="-11" frameWidth="98" frameHeight="138"/>
+	<SubTexture name="Little man swag0004" x="196" y="0" width="98" height="137" frameX="0" frameY="0" frameWidth="98" frameHeight="138"/>
+	<SubTexture name="Little man swag0005" x="196" y="0" width="98" height="137" frameX="0" frameY="0" frameWidth="98" frameHeight="138"/>
+	<SubTexture name="Little man what0000" x="294" y="0" width="126" height="99" frameX="-1" frameY="-1" frameWidth="128" frameHeight="101"/>
+	<SubTexture name="Little man what0001" x="294" y="0" width="126" height="99" frameX="0" frameY="-2" frameWidth="128" frameHeight="101"/>
+	<SubTexture name="Little man what0002" x="0" y="137" width="126" height="98" frameX="-1" frameY="-1" frameWidth="128" frameHeight="101"/>
+	<SubTexture name="Little man what0003" x="126" y="137" width="127" height="99" frameX="-1" frameY="-1" frameWidth="128" frameHeight="101"/>
+	<SubTexture name="Little man what0004" x="294" y="0" width="126" height="99" frameX="-1" frameY="0" frameWidth="128" frameHeight="101"/>
+	<SubTexture name="Little man what0005" x="253" y="137" width="126" height="98" frameX="-1" frameY="-1" frameWidth="128" frameHeight="101"/>
+	<SubTexture name="Little man what0006" x="379" y="137" width="125" height="98" frameX="-1" frameY="0" frameWidth="128" frameHeight="101"/>
+</TextureAtlas>

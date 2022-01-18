@@ -1,0 +1,10 @@
+{
+	"confirm_anim": "M Dad Idle",
+	"idle_anim": "hello2 dot jpeg",
+	"position": [
+		440,
+		154
+	],
+	"scale": 0.7,
+	"image": "Menu_Shuttle-Man"
+}

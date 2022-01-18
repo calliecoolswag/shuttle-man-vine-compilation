@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["Shuttle Man", "Shittle", [255, 255, 255]],
+		["Racquet", "Shittle", [255, 255, 255]],
+		["Balk", "Shittle", [255, 255, 255]],
+		["Dead Horse", "bob", [255, 255, 255]]
+	],
+
+	"weekCharacters": [
+		"shuttle-man",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "shuttle",
+
+	"storyName": "shitty cock man (#stop oprresiion)",
+	"weekBefore": "tutorial",
+	"weekName": "SHUTTLE MAN WEE(D)K",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

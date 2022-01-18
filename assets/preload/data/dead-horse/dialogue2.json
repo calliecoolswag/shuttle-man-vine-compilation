@@ -1,0 +1,45 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "this beat is trash",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bob"
+		},		{
+			"expression": "talk",
+			"text": "sorry i forgot to get a crack for--I MEAN legally register FL Studio 20",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},
+		{
+			"expression": "talk",
+			"text": "also im on a beat block",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},
+		{
+			"expression": "yo mama",
+			"text": "fuck you",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bob"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.13,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "i'm going to go choke on battery acid",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		}
+	]
+}

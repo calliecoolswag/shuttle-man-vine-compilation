@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "yo yo yo it's me",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "THE wordl famous badminton champion!!!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "beeppppp mmmmsksoppiepp",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "it appears there is a challanger upon my court!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "skeebede bap mm badap braaap rap battle",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		}
+	]
+}

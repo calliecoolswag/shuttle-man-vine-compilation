@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "you fool!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "your skills are no match for mine!!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "badminton mid affffffffffffffffffffff",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "huh????????? did you say something?????????",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "shuttle-man"
+		},
+		{
+			"expression": "talk",
+			"text": "sksmeeepemep beebebebaba",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		}
+	]
+}

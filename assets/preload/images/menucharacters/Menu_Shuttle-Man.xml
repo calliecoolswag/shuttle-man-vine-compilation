@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="hello2.png"><SubTexture name="hello2 dot jpeg0000" x="0" y="0" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0001" x="925" y="0" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0002" x="0" y="594" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0003" x="925" y="594" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0004" x="0" y="1188" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0005" x="925" y="1188" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0006" x="0" y="1782" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+<SubTexture name="hello2 dot jpeg0007" x="925" y="1782" width="925" height="594" frameX="0" frameY="0" frameWidth="925" frameHeight="594" />
+</TextureAtlas>

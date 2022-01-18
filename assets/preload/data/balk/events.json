@@ -1,0 +1,189 @@
+{
+	"song": {
+		"speed": 1.8,
+		"stage": "cool",
+		"player1": "bf",
+		"player2": "shuttle-man",
+		"player3": null,
+		"events": [
+			[
+				117300,
+				[
+					[
+						"Change Scroll Speed",
+						"2",
+						"0"
+					]
+				]
+			],
+			[
+				117600,
+				[
+					[
+						"Change Scroll Speed",
+						"2.2",
+						"0"
+					]
+				]
+			],
+			[
+				117900,
+				[
+					[
+						"Change Scroll Speed",
+						"2.4",
+						"0"
+					]
+				]
+			],
+			[
+				118200,
+				[
+					[
+						"Change Scroll Speed",
+						"2.6",
+						"0"
+					]
+				]
+			],
+			[
+				118500,
+				[
+					[
+						"Change Scroll Speed",
+						"2.8",
+						"0"
+					]
+				]
+			],
+			[
+				118650,
+				[
+					[
+						"Change Scroll Speed",
+						"3",
+						"0"
+					]
+				]
+			],
+			[
+				119100,
+				[
+					[
+						"Change Scroll Speed",
+						"3.3",
+						"0"
+					]
+				]
+			],
+			[
+				119400,
+				[
+					[
+						"Change Scroll Speed",
+						"3.6",
+						"0"
+					]
+				]
+			],
+			[
+				119700,
+				[
+					[
+						"Change Scroll Speed",
+						"3.9",
+						"0"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Change Scroll Speed",
+						"4.2",
+						"0"
+					]
+				]
+			],
+			[
+				120300,
+				[
+					[
+						"Change Scroll Speed",
+						"4.5",
+						"0"
+					]
+				]
+			],
+			[
+				120600,
+				[
+					[
+						"Change Scroll Speed",
+						"4.7",
+						"0"
+					]
+				]
+			],
+			[
+				120900,
+				[
+					[
+						"Change Scroll Speed",
+						"5",
+						"0"
+					]
+				]
+			],
+			[
+				121200,
+				[
+					[
+						"Change Scroll Speed",
+						"6",
+						"0"
+					]
+				]
+			],
+			[
+				121500,
+				[
+					[
+						"Change Scroll Speed",
+						"8",
+						"0"
+					]
+				]
+			],
+			[
+				121800,
+				[
+					[
+						"Change Scroll Speed",
+						"10",
+						"0"
+					]
+				]
+			],
+			[
+				122400,
+				[
+					[
+						"Change Scroll Speed",
+						"1.8",
+						"0"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 200,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Balk"
+	}
+}
