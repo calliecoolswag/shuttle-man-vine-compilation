@@ -83,7 +83,7 @@ class CreditsState extends MusicBeatState
 			['Gangster Spongebob',	'iris_funny',		'Character designer of Shuttle Man, main composer, dialogue writer, artist, director I guess',						'https://www.youtube.com/watch?v=5Kn-7CFiepo',	'ff669d'],
 			['Benju',				'benjoo',			'Artist, charter, director I guess',																					'https://twitter.com/BenjuKatchowee',		'FFFFFF'],
 			['Callie',				'bunger',			'Coding, being awesome and epic',																					'https://twitter.com/ImSusInAmongUs',			'B07C35'],
-			['DragonFlame42',		'ron',				'Made the dialogue portraits',																						'https://twitter.com/dragon_priv2/',			'fff200'],
+			['DragonFlame42',		'ron',				'Made the dialogue portraits',																						'https://twitter.com/TapTrial2/',				'fff200'],
 			[''],
 			['People who we stole from'],
 			['Phlox',				'Png',				'Bobs character and animations probably',				'https://twitter.com/HiPhlox',			'524e52'],
@@ -102,7 +102,7 @@ class CreditsState extends MusicBeatState
 			['Keoiki',				'keoiki',			'Note Splash Animations',								'https://twitter.com/Keoiki_',			'FFFFFF'],
 			[''],
 			["Funkin' Crew"],
-			['fnf vs shuttle man',		'fnf vs shuttle man',	"Programmer of Friday Night Funkin'",					'https://twitter.com/ninja_muffin99',	'F73838'],
+			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",					'https://twitter.com/ninja_muffin99',	'F73838'],
 			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",						'https://twitter.com/PhantomArcade3K',	'FFBB1B'],
 			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",						'https://twitter.com/evilsk8r',			'53E52C'],
 			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",						'https://twitter.com/kawaisprite',		'6475F3']
