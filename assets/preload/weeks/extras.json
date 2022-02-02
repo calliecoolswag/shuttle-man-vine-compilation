@@ -1,0 +1,66 @@
+{
+	"storyName": "extra swag shit lol",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "week1",
+	"startUnlocked": true,
+	"songs": [
+		[
+			"musthave",
+			"shittle",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"scrambled",
+			"nob",
+			[
+				0,
+				0,
+				0
+			]
+		],
+		[
+			"callie",
+			"callie",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Sugar Rush",
+			"callie3d",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Renory",
+			"renory",
+			[
+				255,
+				216,
+				0
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekCharacters": [
+		"shuttle-man",
+		"shuttle-man",
+		"shuttle-man"
+	],
+	"weekName": "fnf vs shuttle man"
+}

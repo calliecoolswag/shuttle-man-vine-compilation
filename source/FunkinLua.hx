@@ -157,6 +157,8 @@ class FunkinLua {
 		set('middlescroll', ClientPrefs.middleScroll);
 		set('framerate', ClientPrefs.framerate);
 		set('ghostTapping', ClientPrefs.ghostTapping);
+		set('ronCam', ClientPrefs.ronCam);
+		set('ShuttleMan', ClientPrefs.ShuttleMan);
 		set('hideHud', ClientPrefs.hideHud);
 		set('timeBarType', ClientPrefs.timeBarType);
 		set('scoreZoom', ClientPrefs.scoreZoom);

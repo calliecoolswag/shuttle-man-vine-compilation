@@ -33,7 +33,6 @@ class Paths
 	
 	public static var ignoreModFolders:Array<String> = [
 		'characters',
-		'custom_events',
 		'custom_notetypes',
 		'data',
 		'songs',
@@ -185,8 +184,16 @@ class Paths
 			return file;
 		}
 		#end
-		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Voices.$SOUND_EXT';
+		var songName:String = Paths.formatToSongPath(song);
+		var thingy:String = '';
+	switch (songName)
+	{
+		case 'shuttle-man' | 'racquet' | 'balk' | 'musthave':
+			if (!ClientPrefs.ShuttleMan)
+				thingy = '-noshuttleman1984';
 	}
+	return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-') + thingy}/Voices.$SOUND_EXT';
+}
 
 	inline static public function inst(song:String):Any
 	{
@@ -196,6 +203,7 @@ class Paths
 			return file;
 		}
 		#end
+		var songName:String = Paths.formatToSongPath(song);
 		return 'songs:assets/songs/${song.toLowerCase().replace(' ', '-')}/Inst.$SOUND_EXT';
 	}
 

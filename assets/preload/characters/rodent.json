@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				215,
+				-108
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Rodent Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				235,
+				69
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Rodent Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				360,
+				-60
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Rodent Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				246,
+				-107
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Rodent Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				314,
+				-58
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Rodent Down",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/RodentPhase1",
+	"position": [
+		-220,
+		-230
+	],
+	"healthicon": "rodent",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		70,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

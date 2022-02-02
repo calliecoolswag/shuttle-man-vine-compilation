@@ -1,0 +1,52 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "WHAT THE FUCK IS YOUR PROBLEM?????????",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		{
+			"expression": "talk",
+			"text": "im sick of you and your BULLSHIT",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},
+		{
+			"expression": "talk",
+			"text": "DO YOU REALIZE THE AMOUNT OF INSUFFERABLE PAIN YOU'VE CAUSED ME????",
+			"boxState": "angry",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},
+		{
+			"expression": "fuck you",
+			"text": " ",
+			"boxState": "normal",
+			"speed": 0.10,
+			"portrait": "bob"
+		},
+		{
+			"expression": "talk",
+			"text": "rap battle me and you can have your gay little friend back",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bob"
+		},		
+		{
+			"expression": "talk",
+			"text": "",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "little-man"
+		},		
+		{
+			"expression": "talk",
+			"text": "wtf im getting out of this shit cuh",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		}
+	]
+}

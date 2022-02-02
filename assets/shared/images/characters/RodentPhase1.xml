@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="RodentPhase1.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Rodent Down0000" x="0" y="0" width="838" height="743" frameX="-83" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0001" x="838" y="0" width="849" height="743" frameX="-72" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0002" x="1687" y="0" width="878" height="743" frameX="-43" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0003" x="2565" y="0" width="914" height="756" frameX="-7" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0004" x="3479" y="0" width="914" height="759" frameX="-7" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0005" x="4393" y="0" width="926" height="766" frameX="-10" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0006" x="5319" y="0" width="935" height="774" frameX="-5" frameY="0" frameWidth="955" frameHeight="796"/>
+	<SubTexture name="Rodent Down0007" x="6254" y="0" width="955" height="796"/>
+	<SubTexture name="Rodent Idle0000" x="7209" y="0" width="715" height="675" frameX="-6" frameY="-19" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Idle0001" x="0" y="796" width="740" height="675" frameX="-5" frameY="-19" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Idle0002" x="740" y="796" width="764" height="675" frameX="-4" frameY="-19" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Idle0003" x="1504" y="796" width="791" height="729" frameX="0" frameY="0" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Idle0004" x="2295" y="796" width="788" height="735" frameX="-3" frameY="-13" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Idle0005" x="3083" y="796" width="794" height="737" frameX="-3" frameY="-14" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Idle0006" x="3877" y="796" width="819" height="761" frameX="-5" frameY="-2" frameWidth="824" frameHeight="763"/>
+	<SubTexture name="Rodent Left0000" x="4696" y="796" width="838" height="743" frameX="-36" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0001" x="5534" y="796" width="823" height="743" frameX="-36" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0002" x="6357" y="796" width="804" height="743" frameX="-36" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0003" x="7161" y="796" width="840" height="743" frameX="-18" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0004" x="0" y="1557" width="864" height="743" frameX="-18" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0005" x="864" y="1557" width="873" height="743" frameX="-18" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0006" x="1737" y="1557" width="884" height="743" frameX="-18" frameY="-7" frameWidth="912" frameHeight="750"/>
+	<SubTexture name="Rodent Left0007" x="2621" y="1557" width="912" height="750"/>
+	<SubTexture name="Rodent Right0000" x="3533" y="1557" width="867" height="700" frameX="0" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0001" x="4400" y="1557" width="860" height="700" frameX="-24" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0002" x="5260" y="1557" width="865" height="700" frameX="-30" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0003" x="6125" y="1557" width="873" height="700" frameX="-49" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0004" x="6998" y="1557" width="879" height="700" frameX="-61" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0005" x="0" y="2307" width="883" height="700" frameX="-61" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0006" x="883" y="2307" width="903" height="700" frameX="-47" frameY="0" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0007" x="1786" y="2307" width="908" height="693" frameX="-61" frameY="-7" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Right0008" x="2694" y="2307" width="908" height="689" frameX="-72" frameY="-11" frameWidth="980" frameHeight="700"/>
+	<SubTexture name="Rodent Up0000" x="3602" y="2307" width="838" height="743" frameX="0" frameY="-139" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0001" x="4440" y="2307" width="838" height="774" frameX="0" frameY="-107" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0002" x="5278" y="2307" width="838" height="800" frameX="0" frameY="-81" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0003" x="6116" y="2307" width="832" height="821" frameX="-6" frameY="-61" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0004" x="6948" y="2307" width="827" height="855" frameX="-11" frameY="-41" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0005" x="0" y="3162" width="819" height="867" frameX="-19" frameY="-15" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0006" x="819" y="3162" width="809" height="882" frameX="-19" frameY="0" frameWidth="838" frameHeight="909"/>
+	<SubTexture name="Rodent Up0007" x="1628" y="3162" width="809" height="880" frameX="-19" frameY="-29" frameWidth="838" frameHeight="909"/>
+</TextureAtlas>

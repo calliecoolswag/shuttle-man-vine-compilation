@@ -1,0 +1,93 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				660,
+				690
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "RenoryGameJolt Idle",
+			"indices": [
+				6,
+				5,
+				4,
+				3,
+				2,
+				1,
+				0,
+				7
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				750,
+				700
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "RenoryGameJolt Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				620,
+				730
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RenoryGameJolt Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				650,
+				691
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "RenoryGameJolt Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				660,
+				692
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "RenoryGameJolt Up",
+			"indices": [
+				4,
+				3,
+				2,
+				1,
+				0
+			]
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/RenoryGameJolt",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "renory",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		216,
+		0
+	],
+	"camera_position": [
+		-290,
+		-200
+	],
+	"sing_duration": 6.1,
+	"scale": 0.5
+}

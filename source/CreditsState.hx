@@ -37,10 +37,17 @@ class CreditsState extends MusicBeatState
 	{
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Credits Menus", null);
 		#end
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		if(ClientPrefs.ShuttleMan)
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+			}
+		else 
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuBGwithouttheshittle'));
+			}
 		add(bg);
 
 		grpOptions = new FlxTypedGroup<Alphabet>();
@@ -80,19 +87,39 @@ class CreditsState extends MusicBeatState
 
 		var pisspoop:Array<Array<String>> = [
 			['Shuttle Team'],
-			['Gangster Spongebob',	'iris_funny',		'Character designer of Shuttle Man, main composer, dialogue writer, artist, director I guess',						'https://www.youtube.com/watch?v=5Kn-7CFiepo',	'ff669d'],
-			['Benju',				'benjoo',			'Artist, charter, director I guess',																					'https://twitter.com/BenjuKatchowee',		'FFFFFF'],
-			['Callie',				'bunger',			'Coding, being awesome and epic',																					'https://twitter.com/ImSusInAmongUs',			'B07C35'],
-			['DragonFlame42',		'ron',				'Made the dialogue portraits',																						'https://twitter.com/TapTrial2/',				'fff200'],
+			['Gangster Spongebob',	'iris_funny',		'Main composer, character designer, artist, main director I guess',													'https://www.youtube.com/watch?v=5Kn-7CFiepo',	'ff669d'],
+			['Benju',				'benjoo',			'Character designer, artist, animator, charter, director I guess',														'https://twitter.com/BenjuKatchowee',		'FFFFFF'],
+			['Callie',				'bunger',			'Coding, cool stuff, funny idea haver, character designer, BEST artist on the team',								'https://twitter.com/ImSusInAmongUs',			'B07C35'],
+			['DragonFlame42',		'ron',				'Artist, animator, charter, most experienced Adobe Flash user',														'https://twitter.com/TapTrial2/',				'fff200'],
 			[''],
-			['People who we stole from'],
-			['Phlox',				'Png',				'Bobs character and animations probably',				'https://twitter.com/HiPhlox',			'524e52'],
-			['WildyThomas',			'Png (1)',			'Little Mans character animations I reckon',			'https://twitter.com/wildythomas1233',	'e25f11'],
+			[''],
+			['Collaborators'],	
+			['Renory',				'renory',			'Renory character, sprites and background',																		'https://gamejolt.com/@Renory',		'FFD800'],
+			['Kungit',				'kungit',			'Must Have song composition and concepts for the sprite and Background',			'https://www.youtube.com/channel/UCpGbT8ePdjlu4Tlea17DyQA',		'fe006b'],			
+			[''],
+			[''],
+			['Mods we Stole from lol'],
+			['Bob Mod',				'bob',				'Backgrounds, characters, like everything almost.',		'https://gamejolt.com/games/VSBOB/643446',	'FFFFFF'],
+			['Dave and Bambi',		'dave',				'Bambi and Expunged character sprites and voices',		'https://gamebanana.com/mods/43201',		'0f5fff'],
+			['D and B Golden Apple','bandu',			'Original Sugar Rush song',								'https://gamebanana.com/mods/343129',		'3cee26'],
+			[''],
+			[''],
+			['Bob Mod Devs'],
+			['Phlox',				'Png',				'Creator of Bob',										'https://twitter.com/HiPhlox',			'524e52'],
+			['WildyThomas',			'Png (1)',			'Creator of Little Man and Ron',						'https://twitter.com/wildythomas1233',	'e25f11'],
+			[''],
+			[''],
+			['Special Thanks'],
+			['Yo Mama',				'brody',			'',										'https://www.youtube.com/c/yomama',			'f7d142'],
+			['GameToons',			'player',			'',									'https://www.youtube.com/c/GameToonsOfficial',	'ff3136'],
+			['GoodWill',			'goodwill',			'',													'https://www.goodwill.org/',	'FFFFFF'],
+			[''],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',						'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',					'https://twitter.com/river_oaken',		'C30085'],
-			['bb-panzu',			'bb-panzu',			'Additional Programmer of Psych Engine',				'https://twitter.com/bbsub3',			'389A58'],
+			['bbpanzu',				'bb-panzu',			'Additional Programmer of Psych Engine',				'https://twitter.com/bbsub3',			'389A58'],
+			[''],
 			[''],
 			['Engine Contributors'],
 			['shubs',				'shubs',			'New Input System Programmer',							'https://twitter.com/yoshubs',			'4494E6'],
@@ -100,6 +127,7 @@ class CreditsState extends MusicBeatState
 			['iFlicky',				'iflicky',			'Delay/Combo Menu Song Composer\nand Dialogue Sounds',	'https://twitter.com/flicky_i',			'C549DB'],
 			['PolybiusProxy',		'polybiusproxy',	'.MP4 Video Loader Extension',							'https://twitter.com/polybiusproxy',	'FFEAA6'],
 			['Keoiki',				'keoiki',			'Note Splash Animations',								'https://twitter.com/Keoiki_',			'FFFFFF'],
+			[''],
 			[''],
 			["Funkin' Crew"],
 			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",					'https://twitter.com/ninja_muffin99',	'F73838'],

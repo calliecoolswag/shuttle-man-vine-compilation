@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="RenoryGameJolt.png"><SubTexture name="RenoryGameJolt Idle0000" x="0" y="0" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0001" x="2052" y="0" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0002" x="4104" y="0" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0003" x="6156" y="0" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0004" x="8208" y="0" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0005" x="0" y="2052" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0006" x="2052" y="2052" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Idle0007" x="4104" y="2052" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Up0000" x="6156" y="2052" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Up0001" x="8208" y="2052" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Up0002" x="0" y="4104" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Up0003" x="2052" y="4104" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Up0004" x="4104" y="4104" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Right0000" x="6156" y="4104" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Right0001" x="8208" y="4104" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Right0002" x="0" y="6156" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Right0003" x="2052" y="6156" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Right0004" x="4104" y="6156" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Left0000" x="6156" y="6156" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Left0001" x="8208" y="6156" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Left0002" x="0" y="8208" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Left0003" x="2052" y="8208" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Left0004" x="4104" y="8208" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="ThisDidntWorkDontUse" x="6156" y="8208" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Down0000" x="8208" y="8208" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Down0001" x="0" y="10260" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Down0002" x="2052" y="10260" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+<SubTexture name="RenoryGameJolt Down0003" x="4104" y="10260" width="2052" height="2052" frameX="0" frameY="0" frameWidth="2052" frameHeight="2052" />
+</TextureAtlas>

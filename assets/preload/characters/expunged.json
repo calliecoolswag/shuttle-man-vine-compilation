@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				-37
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				25,
+				9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "singUP"
+		},
+		{
+			"offsets": [
+				-60,
+				-30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "singLEFT"
+		},
+		{
+			"offsets": [
+				26,
+				-47
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "singRIGHT"
+		},
+		{
+			"offsets": [
+				-17,
+				-66
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "singDOWN"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/unfair_bambi",
+	"position": [
+		-120,
+		-10
+	],
+	"healthicon": "exSPONGFEBOBFADSKJKDSAJDASJODSAJJDSAKL",
+	"flip_x": false,
+	"healthbar_colors": [
+		150,
+		14,
+		11
+	],
+	"camera_position": [
+		70,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1.4
+}

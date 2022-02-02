@@ -1,0 +1,329 @@
+{
+	"song": {
+		"speed": 2.4,
+		"stage": "callie",
+		"player1": "blank",
+		"player2": "blank",
+		"player3": null,
+		"events": [
+			[
+				4695.53571428571,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			],
+			[
+				9428.57142857143,
+				[
+					[
+						"Change Character",
+						"dad",
+						"callie"
+					]
+				]
+			],
+			[
+				9792.85714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.050",
+						"0.05"
+					]
+				]
+			],
+			[
+				9857.14285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.099",
+						"0.1"
+					]
+				]
+			],
+			[
+				9964.28571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.10",
+						"0.5"
+					]
+				]
+			],
+			[
+				10071.4285714286,
+				[
+					[
+						"Add Camera Zoom",
+						"0.50",
+						"0.7"
+					]
+				]
+			],
+			[
+				10178.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.99",
+						"0.9"
+					]
+				]
+			],
+			[
+				17357.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				24107.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"0.050",
+						"0.07"
+					]
+				]
+			],
+			[
+				24428.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"0.099",
+						"0.2"
+					]
+				]
+			],
+			[
+				24535.7142857143,
+				[
+					[
+						"Add Camera Zoom",
+						"0.20",
+						"0.6"
+					]
+				]
+			],
+			[
+				24642.8571428571,
+				[
+					[
+						"Add Camera Zoom",
+						"0.50",
+						"0.9"
+					]
+				]
+			],
+			[
+				24750,
+				[
+					[
+						"Add Camera Zoom",
+						"0.99",
+						"1.4"
+					]
+				]
+			],
+			[
+				33321.4285714286,
+				[
+					[
+						"Change Character",
+						"dad",
+						"rodent"
+					]
+				]
+			],
+			[
+				35571.4285714286,
+				[
+					[
+						"Change Character",
+						"dad",
+						"callie"
+					]
+				]
+			],
+			[
+				48428.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				50357.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				51265.1785714286,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				52451.7857142857,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				53815.1785714286,
+				[
+					[
+						"Play Animation",
+						"singLEFTmiss",
+						"bf"
+					]
+				]
+			],
+			[
+				54428.5714285715,
+				[
+					[
+						"Play Animation",
+						"singDOWNmiss",
+						"bf"
+					]
+				]
+			],
+			[
+				55607.1428571429,
+				[
+					[
+						"Change Character",
+						"dad",
+						"cassettegirl"
+					]
+				]
+			],
+			[
+				64607.1428571429,
+				[
+					[
+						"Change Character",
+						"dad",
+						"among"
+					]
+				]
+			],
+			[
+				73098.2142857143,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						"-alt"
+					]
+				]
+			],
+			[
+				74343.75,
+				[
+					[
+						"Alt Idle Animation",
+						"dad",
+						""
+					]
+				]
+			],
+			[
+				74357.1428571429,
+				[
+					[
+						"Change Character",
+						"dad",
+						"callie"
+					]
+				]
+			],
+			[
+				74357.1428571429,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				87000,
+				[
+					[
+						"Play Animation",
+						"singUPmiss",
+						"bf"
+					]
+				]
+			],
+			[
+				97928.5714285714,
+				[
+					[
+						"Play Animation",
+						"singRIGHTmiss",
+						"bf"
+					]
+				]
+			],
+			[
+				98616.9642857143,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			],
+			[
+				108881.25,
+				[
+					[
+						"Add Camera Zoom",
+						"2",
+						"2"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 140,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "callie"
+	}
+}

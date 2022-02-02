@@ -93,7 +93,7 @@ class StoryMenuState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Story Menu", null);
 		#end
 
 		for (i in 0...WeekData.weeksList.length)
@@ -296,7 +296,11 @@ class StoryMenuState extends MusicBeatState
 
 			PlayState.storyDifficulty = curDifficulty;
 
-			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
+			var thingy:String = '';
+			if (!ClientPrefs.ShuttleMan && curWeek == 1)
+				thingy = '-noshuttleman1984';
+
+			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase() + thingy);
 			PlayState.campaignScore = 0;
 			PlayState.campaignMisses = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)

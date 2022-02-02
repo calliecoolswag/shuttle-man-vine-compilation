@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				170,
+				-10
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "EggLeft"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				-20
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "EggDown"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				191
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "EggUp"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				-20
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "EggRight"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "EggIdle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/eggbob",
+	"position": [
+		0,
+		330
+	],
+	"healthicon": "nob",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

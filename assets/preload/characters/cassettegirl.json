@@ -1,0 +1,34 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				164,
+				-257
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "cassette girl idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cassettegirl",
+	"position": [
+		0,
+		-240
+	],
+	"healthicon": "pico",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		400
+	],
+	"sing_duration": 6.1,
+	"scale": 0.700000000000008
+}

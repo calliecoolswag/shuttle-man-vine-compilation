@@ -55,6 +55,10 @@ class WeekEditorState extends MusicBeatState
 	}
 
 	override function create() {
+
+		Conductor.changeBPM(128.0);
+		FlxG.sound.playMusic(Paths.music('offsetSong'), 0.5);
+
 		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
 		txtWeekTitle.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;

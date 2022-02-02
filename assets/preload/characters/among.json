@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				131,
+				-280
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "among left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				20,
+				-260
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "among down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				84,
+				-260
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "among up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				50,
+				-354
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "among right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				1,
+				-301
+			],
+			"loop": false,
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "among kill",
+			"indices": []
+		},
+		{
+			"offsets": [
+				1,
+				-311
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "among idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/among",
+	"position": [
+		0,
+		80
+	],
+	"healthicon": "among",
+	"flip_x": false,
+	"healthbar_colors": [
+		237,
+		28,
+		36
+	],
+	"camera_position": [
+		0,
+		90
+	],
+	"sing_duration": 6.1,
+	"scale": 4.10000000000001
+}

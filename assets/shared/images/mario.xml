@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="mario.png"><SubTexture name="mario lmfao0000" x="0" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0001" x="1924" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0002" x="3848" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0003" x="5772" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0004" x="7696" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0005" x="9620" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0006" x="11544" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0007" x="13468" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0008" x="0" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0009" x="1924" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0010" x="3848" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0011" x="5772" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0012" x="7696" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0013" x="9620" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0014" x="11544" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0015" x="13468" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0016" x="0" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0017" x="1924" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0018" x="3848" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0019" x="5772" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0020" x="7696" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0021" x="9620" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0022" x="11544" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0023" x="13468" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0024" x="0" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0025" x="1924" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0026" x="3848" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0027" x="5772" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0028" x="7696" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0029" x="9620" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0030" x="11544" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0031" x="13468" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0032" x="0" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />/>
+<SubTexture name="mario lmfao0033" x="1924" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0034" x="3848" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0035" x="5772" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0036" x="7696" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0037" x="9620" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0038" x="11544" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0039" x="13468" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0033" x="1924" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0034" x="3848" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" /> />" />
+<SubTexture name="mario lmfao0054" x="11544" y="6504" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0055" x="13468" y="6504" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0056" x="0" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0057" x="1924" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0058" x="3848" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0059" x="5772" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0060" x="7696" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0061" x="9620" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0062" x="11544" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0063" x="13468" y="7588" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0064" x="0" y="8672" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0065" x="1924" y="8672" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="mario lmfao0066" x="3848" y="8672" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+</TextureAtlas>

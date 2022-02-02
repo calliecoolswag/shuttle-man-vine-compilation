@@ -33,7 +33,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 	{
 		title = 'Gameplay Settings';
 		rpcTitle = 'Gameplay Settings Menu'; //for Discord Rich Presence
-		
+
 		var option:Option = new Option('Controller Mode',
 			'Check this if you want to play with\na controller instead of using your Keyboard.',
 			'controllerMode',
@@ -68,9 +68,9 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'noReset',
 			'bool',
 			false);
-		addOption(option);
+		addOption(option); 
 
-		/*var option:Option = new Option('Note Delay',
+		var option:Option = new Option('Note Delay',
 			'Changes how late a note is spawned.\nUseful for preventing audio lag from wireless earphones.',
 			'noteOffset',
 			'int',
@@ -79,7 +79,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.scrollSpeed = 100;
 		option.minValue = 0;
 		option.maxValue = 500;
-		addOption(option);*/
+		addOption(option);
 
 		var option:Option = new Option('Rating Offset',
 			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',
@@ -134,6 +134,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.minValue = 2;
 		option.maxValue = 10;
 		option.changeValue = 0.1;
+		addOption(option);
+
+		var option:Option = new Option('Shuttle Man',
+		'If disabled, turns off Shuttle Man.',
+		'ShuttleMan',
+		'bool',
+		false);
 		addOption(option);
 
 		super();

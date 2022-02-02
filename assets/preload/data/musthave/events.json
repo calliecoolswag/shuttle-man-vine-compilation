@@ -1,0 +1,39 @@
+{
+	"song": {
+		"speed": 2.6,
+		"stage": "goodwill",
+		"player1": "bf",
+		"player2": "shuttlemusthave",
+		"player3": null,
+		"events": [
+			[
+				83172.4137931034,
+				[
+					[
+						"Change Character",
+						"dad",
+						"expunged"
+					]
+				]
+			],
+			[
+				112551.724137931,
+				[
+					[
+						"Change Character",
+						"dad",
+						"shuttlemusthave"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 145,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "musthave"
+	}
+}

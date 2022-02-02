@@ -140,7 +140,7 @@ class PlayState extends MusicBeatState
 	public var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
 
 	public var camZooming:Bool = false;
-	private var curSong:String = "";
+	public static var curSong:String = "";
 
 	public var gfSpeed:Int = 1;
 	public var health:Float = 1;
@@ -212,6 +212,13 @@ class PlayState extends MusicBeatState
 	var santa:BGSprite;
 	var heyTimer:Float;
 
+	var untitled:BGSprite;
+	var bubsy:BGSprite;
+	var minimario:BGSprite;
+	var whitepeople:BGSprite;
+
+	public static var ronReact:BGSprite;
+
 	var bgGirls:BackgroundGirls;
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
@@ -227,7 +234,7 @@ class PlayState extends MusicBeatState
 	public static var campaignMisses:Int = 0;
 	public static var seenCutscene:Bool = false;
 	public static var deathCounter:Int = 0;
-
+	
 	public var defaultCamZoom:Float = 1.05;
 
 	// how big to stretch the pixel art assets
@@ -236,10 +243,10 @@ class PlayState extends MusicBeatState
 
 	public var inCutscene:Bool = false;
 	var songLength:Float = 0;
+	var noshuttleguysosafd:Bool = false;
 
 	#if desktop
 	// Discord RPC variables
-	var storyDifficultyText:String = "";
 	var detailsText:String = "";
 	var detailsPausedText:String = "";
 	#end
@@ -261,6 +268,9 @@ class PlayState extends MusicBeatState
 	
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
+
+	public static var dialougeThingy:Bool = false;
+	public static var dialougeThingyTWO:Bool = false;
 
 	override public function create()
 	{
@@ -323,9 +333,6 @@ class PlayState extends MusicBeatState
 		Conductor.changeBPM(SONG.bpm);
 
 		#if desktop
-		storyDifficultyText = CoolUtil.difficulties[storyDifficulty];
-
-		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
 		if (isStoryMode)
 		{
 			detailsText = "Story Mode: " + WeekData.getCurrentWeek().weekName;
@@ -342,24 +349,9 @@ class PlayState extends MusicBeatState
 		GameOverSubstate.resetVariables();
 		var songName:String = Paths.formatToSongPath(SONG.song);
 		curStage = PlayState.SONG.stage;
-		//trace('stage is: ' + curStage);
 		if(PlayState.SONG.stage == null || PlayState.SONG.stage.length < 1) {
 			switch (songName)
 			{
-				case 'spookeez' | 'south' | 'monster':
-					curStage = 'spooky';
-				case 'pico' | 'blammed' | 'philly' | 'philly-nice':
-					curStage = 'philly';
-				case 'milf' | 'satin-panties' | 'high':
-					curStage = 'limo';
-				case 'cocoa' | 'eggnog':
-					curStage = 'mall';
-				case 'winter-horrorland':
-					curStage = 'mallEvil';
-				case 'senpai' | 'roses':
-					curStage = 'school';
-				case 'thorns':
-					curStage = 'schoolEvil';
 				default:
 					curStage = 'stage';
 			}
@@ -394,6 +386,16 @@ class PlayState extends MusicBeatState
 		switch (curStage)
 		{
 			case 'cool':
+				switch (songName)
+				{
+					case 'shuttle-man' | 'racquet':
+						if (!ClientPrefs.ShuttleMan)
+							noshuttleguysosafd = true;
+							dialougeThingy = true;
+					case 'balk':
+						if (!ClientPrefs.ShuttleMan)
+							noshuttleguysosafd = true;
+				}
 				var bg:BGSprite = new BGSprite('bg_less_concept', -600, -200, 0.9, 0.9);
 				add(bg);
 
@@ -406,24 +408,87 @@ class PlayState extends MusicBeatState
 			stageFront.updateHitbox();
 			add(stageFront);
 
-			if(!ClientPrefs.lowQuality) {
-				var stageLight:BGSprite = new BGSprite('stage_light', -125, -100, 0.9, 0.9);
-				stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
-				stageLight.updateHitbox();
-				add(stageLight);
-					
-				var stageLight:BGSprite = new BGSprite('stage_light', 1225, -100, 0.9, 0.9);
-				stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
-				stageLight.updateHitbox();
-				stageLight.flipX = true;
-				add(stageLight);
+			var stageCurtains:BGSprite = new BGSprite('stagecurtains', -500, -300, 1.3, 1.3);
+			stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+			stageCurtains.updateHitbox();
+			add(stageCurtains);
 
-				var stageCurtains:BGSprite = new BGSprite('stagecurtains', -500, -300, 1.3, 1.3);
-				stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
-				stageCurtains.updateHitbox();
-				add(stageCurtains);
+			case 'trouble' :
+
+					var bg:BGSprite = new BGSprite('nothappy_sky', -100, 10, 0.9, 0.9);
+					bg.updateHitbox();
+					bg.scale.x = 1.2;
+					bg.scale.y = 1.2;
+					bg.active = false;
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.1, 0.1);
+					add(bg);
+					
+					var ground:BGSprite = new BGSprite('nothappy_ground', -537, -250, 0.9, 0.9);
+					ground.updateHitbox();
+					ground.active = false;
+					ground.antialiasing = true;
+					add(ground);
+
+					var deadron:BGSprite = new BGSprite('GoodHeDied', -800, 600, 0.9, 0.9);
+					deadron.updateHitbox();
+					deadron.active = false;
+					deadron.scale.x = 0.8;
+					deadron.scale.y = 0.8;
+					deadron.antialiasing = true;
+					add(deadron);
+
+			case 'goodwill' :
+
+				switch (songName)
+				{
+					case 'musthave':
+						if (!ClientPrefs.ShuttleMan)
+							noshuttleguysosafd = true;
+				}
+
+					var GoodwillofNorthernWisconsinandUpperPeninsulaSaultSteMarieStore21:BGSprite = new BGSprite('Goodwill-of-Northern-Wisconsin-and-Upper-Peninsula-Sault-Ste-Marie-Store-2-1', -520, -200, 0.9, 0.9);
+					GoodwillofNorthernWisconsinandUpperPeninsulaSaultSteMarieStore21.updateHitbox();
+					GoodwillofNorthernWisconsinandUpperPeninsulaSaultSteMarieStore21.active = false;
+					GoodwillofNorthernWisconsinandUpperPeninsulaSaultSteMarieStore21.scale.set(2, 2);
+					GoodwillofNorthernWisconsinandUpperPeninsulaSaultSteMarieStore21.antialiasing = true;
+					add(GoodwillofNorthernWisconsinandUpperPeninsulaSaultSteMarieStore21);
+			
+			/* code for unused zanta cover, will prob be in 2.0
+			case 'zantaStage':
+				if (!ClientPrefs.ronCam)
+				{
+					ronReact = new BGSprite('ron', -3, 0, 0.9, 0.9, ['ron react'], true);
+					ronReact.animation.addByPrefix('smash', 'ron smash', 24, false);
+					ronReact.animation.addByPrefix('idle', 'ron react', 24, true);
+					add(ronReact);
+					ronReact.cameras = [camHUD];
+				}
+			*/
+			case 'callie':
+						untitled = new BGSprite('Untitled-1', -600, -200, 0.9, 0.9);
+						untitled.visible = true;
+						add(untitled);
+				if (!ClientPrefs.lowQuality)
+					{
+						bubsy = new BGSprite('bubsy', -950, -227, ['bubsy fuck you delta']);
+						bubsy.visible = false;
+						add(bubsy);
+	
+						whitepeople = new BGSprite('whitepeople', -950, -150, ['white people be like']);
+						whitepeople.visible = false;
+						add(whitepeople);
+						
+						minimario = new BGSprite('mario', -950, -150, ['mario lmfao']);
+						minimario.visible = false;
+						add(minimario);
+					}
+			case 'callie3D':
+
+					untitled = new BGSprite('Untitled-1-3D', -600, -200, 0.9, 0.9);
+					untitled.visible = true;
+					add(untitled);
 			}
-		}
 
 		if(isPixelStage) {
 			introSoundsSuffix = '-pixel';
@@ -434,9 +499,25 @@ class PlayState extends MusicBeatState
 				introSoundsSuffix = 'bob';
 			}
 
+		if (songName == 'shuttle-man' && noshuttleguysosafd == true)
+			{
+				SONG.player2 = 'blank';
+			}
+		if (songName == 'racquet' && noshuttleguysosafd == true)
+			{
+				SONG.player2 = 'blank';
+			}
+		if (songName == 'balk' && noshuttleguysosafd == true)
+			{
+				SONG.player2 = 'blank';
+			}
+		if (SONG.player2 == 'shuttlemusthave' && noshuttleguysosafd == true)
+			{
+				SONG.player2 = 'blank';
+			}
+
 		add(gfGroup);
 
-		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
 
@@ -679,22 +760,6 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
-		for (event in eventPushedMap.keys())
-		{
-			var luaToLoad:String = Paths.modFolders('custom_events/' + event + '.lua');
-			if(FileSystem.exists(luaToLoad))
-			{
-				luaArray.push(new FunkinLua(luaToLoad));
-			}
-			else
-			{
-				luaToLoad = Paths.getPreloadPath('custom_events/' + event + '.lua');
-				if(FileSystem.exists(luaToLoad))
-				{
-					luaArray.push(new FunkinLua(luaToLoad));
-				}
-			}
-		}
 		#end
 		noteTypeMap.clear();
 		noteTypeMap = null;
@@ -829,34 +894,11 @@ class PlayState extends MusicBeatState
 		#end
 		
 		var daSong:String = Paths.formatToSongPath(curSong);
-		if (isStoryMode && !seenCutscene)
+		if (!seenCutscene)
 		{
 			switch (daSong)
 			{
-				case "monster":
-					var whiteScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.WHITE);
-					add(whiteScreen);
-					whiteScreen.scrollFactor.set();
-					whiteScreen.blend = ADD;
-					camHUD.visible = false;
-					snapCamFollowToPos(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
-					inCutscene = true;
-
-					FlxTween.tween(whiteScreen, {alpha: 0}, 1, {
-						startDelay: 0.1,
-						ease: FlxEase.linear,
-						onComplete: function(twn:FlxTween)
-						{
-							camHUD.visible = true;
-							remove(whiteScreen);
-							startCountdown();
-						}
-					});
-					FlxG.sound.play(Paths.soundRandom('thunder_', 1, 2));
-					gf.playAnim('scared', true);
-					boyfriend.playAnim('scared', true);
-
-				case "winter-horrorland":
+				case "scrambled":
 					var blackScreen:FlxSprite = new FlxSprite().makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
 					add(blackScreen);
 					blackScreen.scrollFactor.set();
@@ -869,8 +911,7 @@ class PlayState extends MusicBeatState
 							remove(blackScreen);
 						}
 					});
-					FlxG.sound.play(Paths.sound('Lights_Turn_On'));
-					snapCamFollowToPos(400, -2050);
+					snapCamFollowToPos(300, 630);
 					FlxG.camera.focusOn(camFollow);
 					FlxG.camera.zoom = 1.5;
 
@@ -887,7 +928,14 @@ class PlayState extends MusicBeatState
 						});
 					});
 				case 'shuttle-man' | 'racquet' | 'balk' | 'dead-horse':
-					startDialogue(dialogueJson);
+					if (isStoryMode && ClientPrefs.ShuttleMan)
+						{
+							startDialogue(dialogueJson);
+						}
+					else
+						{
+							startCountdown();
+						}
 
 				default:
 					startCountdown();
@@ -905,7 +953,7 @@ class PlayState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence.
-		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+		DiscordClient.changePresence(detailsText, SONG.song, iconP2.getCharacter());
 		#end
 
 		if(!ClientPrefs.controllerMode)
@@ -1283,14 +1331,10 @@ class PlayState extends MusicBeatState
 					antialias = false;
 				}
 
-				// head bopping for bg characters on Mall
-				if(curStage == 'mall') {
-					if(!ClientPrefs.lowQuality)
-						upperBoppers.dance(true);
-	
-					bottomBoppers.dance(true);
-					santa.dance(true);
+				/*if(curStage == 'zantaStage' && !ClientPrefs.ronCam) {
+					ronReact.dance(true);
 				}
+				*/
 
 				switch (swagCounter)
 				{
@@ -1411,7 +1455,7 @@ class PlayState extends MusicBeatState
 		
 		#if desktop
 		// Updating Discord Rich Presence (with Time Left)
-		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
+		DiscordClient.changePresence(detailsText, SONG.song, iconP2.getCharacter(), true, songLength);
 		#end
 		setOnLuas('songLength', songLength);
 		callOnLuas('onSongStart', []);
@@ -1633,7 +1677,7 @@ class PlayState extends MusicBeatState
 				babyArrow.y -= 10;
 				babyArrow.alpha = 0;
 				FlxTween.tween(babyArrow, {y: babyArrow.y + 10, alpha: targetAlpha}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i)});
-			}
+			}	
 			else
 			{
 				babyArrow.alpha = targetAlpha;
@@ -1744,11 +1788,11 @@ class PlayState extends MusicBeatState
 			#if desktop
 			if (startTimer.finished)
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+				DiscordClient.changePresence(detailsText, SONG.song, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
 			}
 			else
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				DiscordClient.changePresence(detailsText, SONG.song, iconP2.getCharacter());
 			}
 			#end
 		}
@@ -1763,11 +1807,11 @@ class PlayState extends MusicBeatState
 		{
 			if (Conductor.songPosition > 0.0)
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+				DiscordClient.changePresence(detailsText, SONG.song, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
 			}
 			else
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				DiscordClient.changePresence(detailsText, SONG.song, iconP2.getCharacter());
 			}
 		}
 		#end
@@ -1780,7 +1824,7 @@ class PlayState extends MusicBeatState
 		#if desktop
 		if (health > 0 && !paused)
 		{
-			DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+			DiscordClient.changePresence(detailsPausedText, SONG.song, iconP2.getCharacter());
 		}
 		#end
 
@@ -1806,16 +1850,33 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		if (FlxG.keys.justPressed.NINE && SONG.player1 == 'bf')
+		if (FlxG.keys.justPressed.NINE && SONG.player1 == 'bf' || FlxG.keys.justPressed.NINE && SONG.player1 == 'blank')
 		{
 			iconP1.swapOldIcon();
 		}
 
-		if (SONG.player1 == 'little-man')
+
+		/*if (FlxG.keys.justPressed.NINE && curSong == 'zanta')
 		{
-			GameOverSubstate.deathSoundName = 'fnf_loss_sfx_raw_version';
-			GameOverSubstate.characterName = 'littlemandie';			
+			iconP2.swapRobloxIcon();
+		}*/
+
+
+		if (SONG.player1 == 'little-man')
+			{
+				GameOverSubstate.deathSoundName = 'fnf_loss_sfx_raw_version';
+				GameOverSubstate.characterName = 'littlemandie';			
+			}
+			
+		if (SONG.player1 == 'player')
+		{
+			GameOverSubstate.characterName = 'player';			
 		}
+
+		if (SONG.player2 == 'shuttle-man' && !ClientPrefs.ShuttleMan)
+			{
+				SONG.player1 == 'blank';
+			}
 
 		callOnLuas('onUpdate', [elapsed]);
 
@@ -1982,7 +2043,7 @@ class PlayState extends MusicBeatState
 				//}
 		
 				#if desktop
-				DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				DiscordClient.changePresence(detailsPausedText, SONG.song, iconP2.getCharacter());
 				#end
 			}
 		}
@@ -2348,7 +2409,7 @@ class PlayState extends MusicBeatState
 				
 				#if desktop
 				// Game Over doesn't get his own variable because it's only used here
-				DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				DiscordClient.changePresence("Game Over - " + detailsText, SONG.song, iconP2.getCharacter());
 				#end
 				isDead = true;
 				return true;
@@ -2856,9 +2917,7 @@ class PlayState extends MusicBeatState
 		if(achievementObj != null) {
 			return;
 		} else {
-			var achieve:String = checkForAchievement(['week1_nomiss', 'week2_nomiss', 'week3_nomiss', 'week4_nomiss',
-				'week5_nomiss', 'week6_nomiss', 'week7_nomiss', 'ur_bad',
-				'ur_good', 'hype', 'two_keys', 'toastie', 'debugger']);
+			var achieve:String = checkForAchievement(['dead_horse_miss', 'kys', 'hologram']);
 
 			if(achieve != null) {
 				startAchievement(achieve);
@@ -3411,7 +3470,24 @@ class PlayState extends MusicBeatState
 		//For testing purposes
 		//trace(daNote.missHealth);
 		songMisses++;
+		if (SONG.player1 == 'little-man')
+			{
+				FlxG.sound.play(Paths.soundRandom('littlemiss', 1, 5), FlxG.random.float(1.2, 1.2));
+			}
+		else
+			{
+				FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
+			}
 		vocals.volume = 0;
+		/*if (curSong == 'zanta' && !ClientPrefs.ronCam)
+			{
+				ronReact.animation.play('smash');
+				FlxG.sound.play(Paths.sound('pee'), 1);
+				new FlxTimer().start(1.5, function(tmr:FlxTimer)
+				{
+					ronReact.animation.play('idle');
+				});
+			}*/
 		if(!practiceMode) songScore -= 10;
 		
 		totalPlayed++;
@@ -3801,18 +3877,6 @@ class PlayState extends MusicBeatState
 				limoCorpse.visible = false;
 				limoCorpseTwo.visible = false;
 				limoKillingState = 1;
-
-				#if ACHIEVEMENTS_ALLOWED
-				Achievements.henchmenDeath++;
-				FlxG.save.data.henchmenDeath = Achievements.henchmenDeath;
-				var achieve:String = checkForAchievement(['roadkill_enthusiast']);
-				if (achieve != null) {
-					startAchievement(achieve);
-				} else {
-					FlxG.save.flush();
-				}
-				FlxG.log.add('Deaths: ' + Achievements.henchmenDeath);
-				#end
 			}
 		}
 	}
@@ -3958,6 +4022,119 @@ class PlayState extends MusicBeatState
 				}
 			}
 
+		if (curSong == 'callie')
+			{
+			    if (curBeat == 24)
+					{
+						FlxG.camera.zoom = defaultCamZoom;
+						camHUD.zoom = 1;
+					}
+				if  (curBeat == 72 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = true;
+						bubsy.animation.play('bubsy fuck you delta');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+					}
+				if (curBeat == 76 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = false;
+						dad.visible = true;
+						boyfriend.visible = true;
+						untitled.visible = true;
+					}
+				if (curBeat == 108 && !ClientPrefs.lowQuality)
+					{
+						minimario.visible = true;
+						minimario.animation.play('mario lmfao');
+						trace('MARIO!!!!1!');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+						camHUD.visible = false;
+					}
+				if (curBeat == 113 && !ClientPrefs.lowQuality)
+					{
+						minimario.visible = false;
+						dad.visible = true;
+						trace('no MARIO!!!!1! :sadspongebob:');
+						boyfriend.visible = true;
+						untitled.visible = true;
+						camHUD.visible = true;
+					}
+				if  (curBeat == 177 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = true;
+						bubsy.animation.play('bubsy fuck you delta');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+					}
+				if  (curBeat == 182 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = true;
+						bubsy.animation.play('bubsy fuck you delta');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+					}
+				if (curBeat == 185 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = false;
+						dad.visible = true;
+						boyfriend.visible = true;
+						untitled.visible = true;
+					}
+				if (curBeat == 205 && !ClientPrefs.lowQuality)
+					{
+						whitepeople.visible = true;
+						whitepeople.animation.play('white people be like');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+						camHUD.visible = false;
+					}
+				if (curBeat == 207 && !ClientPrefs.lowQuality)
+					{
+						whitepeople.visible = false;
+						dad.visible = true;
+						boyfriend.visible = true;
+						untitled.visible = true;
+						camHUD.visible = true;
+					}
+				if  (curBeat == 214 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = true;
+						bubsy.animation.play('bubsy fuck you delta');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+					}
+				if (curBeat == 219 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = false;
+						dad.visible = true;
+						boyfriend.visible = true;
+						untitled.visible = true;
+					}
+				if  (curBeat == 243 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = true;
+						bubsy.animation.play('bubsy fuck you delta');
+						dad.visible = false;
+						boyfriend.visible = false;
+						untitled.visible = false;
+					}
+				if (curBeat == 248 && !ClientPrefs.lowQuality)
+					{
+						bubsy.visible = false;
+						dad.visible = true;
+						boyfriend.visible = true;
+						untitled.visible = true;
+					}
+				}
+			
 		switch (curStage)
 		{
 			case 'school':
@@ -4119,68 +4296,20 @@ class PlayState extends MusicBeatState
 				var unlock:Bool = false;
 				switch(achievementName)
 				{
-					case 'week1_nomiss' | 'week2_nomiss' | 'week3_nomiss' | 'week4_nomiss' | 'week5_nomiss' | 'week6_nomiss' | 'week7_nomiss':
-						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' && storyPlaylist.length <= 1 && !changedDifficulty && !usedPractice)
+					case 'dead_horse_miss':
+						if(Paths.formatToSongPath(SONG.song) == 'dead-horse' && songMisses < 1 && !usedPractice && !chartingMode)
 						{
-							var weekName:String = WeekData.getWeekFileName();
-							switch(weekName) //I know this is a lot of duplicated code, but it's easier readable and you can add weeks with different names than the achievement tag
-							{
-								case 'week1':
-									if(achievementName == 'week1_nomiss') unlock = true;
-								case 'week2':
-									if(achievementName == 'week2_nomiss') unlock = true;
-								case 'week3':
-									if(achievementName == 'week3_nomiss') unlock = true;
-								case 'week4':
-									if(achievementName == 'week4_nomiss') unlock = true;
-								case 'week5':
-									if(achievementName == 'week5_nomiss') unlock = true;
-								case 'week6':
-									if(achievementName == 'week6_nomiss') unlock = true;
-								case 'week7':
-									if(achievementName == 'week7_nomiss') unlock = true;
-							}
-						}
-					case 'ur_bad':
-						if(ratingPercent < 0.2 && !practiceMode) {
 							unlock = true;
 						}
-					case 'ur_good':
-						if(ratingPercent >= 1 && !usedPractice) {
+					case 'kys':
+						if(TitleState.kysVariable = true) {
 							unlock = true;
 						}
-					case 'roadkill_enthusiast':
-						if(Achievements.henchmenDeath >= 100) {
+					case 'hologram':
+						if(Paths.formatToSongPath(SONG.song) == 'holograms') {
 							unlock = true;
 						}
-					case 'oversinging':
-						if(boyfriend.holdTimer >= 10 && !usedPractice) {
-							unlock = true;
-						}
-					case 'hype':
-						if(!boyfriendIdled && !usedPractice) {
-							unlock = true;
-						}
-					case 'two_keys':
-						if(!usedPractice) {
-							var howManyPresses:Int = 0;
-							for (j in 0...keysPressed.length) {
-								if(keysPressed[j]) howManyPresses++;
-							}
-
-							if(howManyPresses <= 2) {
-								unlock = true;
-							}
-						}
-					case 'toastie':
-						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist) {
-							unlock = true;
-						}
-					case 'debugger':
-						if(Paths.formatToSongPath(SONG.song) == 'test' && !usedPractice) {
-							unlock = true;
-						}
-				}
+					}
 
 				if(unlock) {
 					Achievements.unlockAchievement(achievementName);

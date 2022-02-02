@@ -1,0 +1,30 @@
+{
+	"song": {
+		"speed": 1.8,
+		"stage": "callie3D",
+		"player1": "bf",
+		"player2": "callie3D",
+		"player3": null,
+		"events": [
+			[
+				9223.40425531915,
+				[
+					[
+						"Change Scroll Speed",
+						"1.8",
+						"0"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "blank",
+		"bpm": 188,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"susMeter": false,
+		"song": "Sugar Rush"
+	}
+}

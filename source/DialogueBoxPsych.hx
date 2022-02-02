@@ -183,8 +183,12 @@ class DialogueBoxPsych extends FlxSpriteGroup
 	{
 		super();
 
-		if(song != null && song != '') {
-			FlxG.sound.playMusic(Paths.music(song), 0);
+		if(PlayState.dialougeThingy = true) {
+			FlxG.sound.playMusic(Paths.music('shuttle_pi_friendly_dialogue'), 0);
+			FlxG.sound.music.fadeIn(2, 0, 1);
+		}
+		else if(PlayState.dialougeThingyTWO = true) {
+			FlxG.sound.playMusic(Paths.music('shuttle_pissed_dialogue'), 0);
 			FlxG.sound.music.fadeIn(2, 0, 1);
 		}
 		

@@ -1,0 +1,29 @@
+{
+	"song": {
+		"speed": 1.8,
+		"stage": null,
+		"player1": "bf",
+		"player2": "bob",
+		"player3": null,
+		"events": [
+			[
+				20034.375,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bobmad"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 240,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Dead Horse"
+	}
+}

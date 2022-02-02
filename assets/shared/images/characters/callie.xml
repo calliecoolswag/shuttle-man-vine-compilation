@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="callie.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="callie down0000" x="0" y="0" width="227" height="143" frameX="-161" frameY="0" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0001" x="0" y="0" width="227" height="143" frameX="-161" frameY="0" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0002" x="227" y="0" width="268" height="120" frameX="-141" frameY="-23" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0003" x="227" y="0" width="268" height="120" frameX="-141" frameY="-23" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0004" x="495" y="0" width="344" height="89" frameX="-103" frameY="-54" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0005" x="495" y="0" width="344" height="89" frameX="-103" frameY="-54" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0006" x="839" y="0" width="449" height="53" frameX="-50" frameY="-90" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0007" x="839" y="0" width="449" height="53" frameX="-50" frameY="-90" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie down0008" x="1288" y="0" width="549" height="25" frameX="0" frameY="-118" frameWidth="549" frameHeight="143"/>
+	<SubTexture name="callie idle0000" x="0" y="143" width="224" height="159" frameX="-35" frameY="0" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0001" x="0" y="143" width="224" height="159" frameX="-35" frameY="0" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0002" x="224" y="143" width="338" height="114" frameX="0" frameY="-45" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0003" x="224" y="143" width="338" height="114" frameX="0" frameY="-45" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0004" x="562" y="143" width="278" height="137" frameX="-21" frameY="-23" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0005" x="562" y="143" width="278" height="137" frameX="-21" frameY="-23" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0006" x="840" y="143" width="243" height="152" frameX="-33" frameY="-8" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0007" x="840" y="143" width="243" height="152" frameX="-33" frameY="-8" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie idle0008" x="0" y="143" width="224" height="159" frameX="-34" frameY="0" frameWidth="338" frameHeight="160"/>
+	<SubTexture name="callie left0000" x="1083" y="143" width="218" height="175" frameX="-149" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie left0001" x="1083" y="143" width="218" height="175" frameX="-149" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie left0002" x="1301" y="143" width="367" height="175"/>
+	<SubTexture name="callie left0003" x="1301" y="143" width="367" height="175"/>
+	<SubTexture name="callie left0004" x="1668" y="143" width="288" height="175" frameX="-79" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie left0005" x="1668" y="143" width="288" height="175" frameX="-79" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie left0006" x="0" y="318" width="247" height="175" frameX="-120" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie left0007" x="0" y="318" width="247" height="175" frameX="-120" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie left0008" x="247" y="318" width="227" height="175" frameX="-140" frameY="0" frameWidth="367" frameHeight="175"/>
+	<SubTexture name="callie right0000" x="474" y="318" width="218" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0001" x="474" y="318" width="218" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0002" x="692" y="318" width="367" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0003" x="692" y="318" width="367" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0004" x="1059" y="318" width="310" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0005" x="1059" y="318" width="310" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0006" x="1369" y="318" width="253" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0007" x="1369" y="318" width="253" height="175" frameX="-1" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie right0008" x="1622" y="318" width="219" height="175" frameX="0" frameY="0" frameWidth="368" frameHeight="175"/>
+	<SubTexture name="callie up0000" x="1841" y="318" width="165" height="197" frameX="0" frameY="-101" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0001" x="1841" y="318" width="165" height="197" frameX="0" frameY="-101" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0002" x="0" y="515" width="63" height="298" frameX="-51" frameY="0" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0003" x="0" y="515" width="63" height="298" frameX="-51" frameY="0" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0004" x="63" y="515" width="113" height="256" frameX="-26" frameY="-42" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0005" x="63" y="515" width="113" height="256" frameX="-26" frameY="-42" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0006" x="176" y="515" width="149" height="226" frameX="-8" frameY="-72" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0007" x="176" y="515" width="149" height="226" frameX="-8" frameY="-72" frameWidth="166" frameHeight="298"/>
+	<SubTexture name="callie up0008" x="1841" y="318" width="165" height="197" frameX="0" frameY="-101" frameWidth="166" frameHeight="298"/>
+</TextureAtlas>

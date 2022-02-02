@@ -9,6 +9,7 @@ class HealthIcon extends FlxSprite
 {
 	public var sprTracker:FlxSprite;
 	private var isOldIcon:Bool = false;
+	private var isRobloxIcon:Bool = false;
 	private var isPlayer:Bool = false;
 	private var char:String = '';
 
@@ -16,6 +17,7 @@ class HealthIcon extends FlxSprite
 	{
 		super();
 		isOldIcon = (char == 'bf-old');
+		isRobloxIcon = (char == 'nike-man');
 		this.isPlayer = isPlayer;
 		changeIcon(char);
 		scrollFactor.set();
@@ -32,6 +34,11 @@ class HealthIcon extends FlxSprite
 	public function swapOldIcon() {
 		if(isOldIcon = !isOldIcon) changeIcon('bf-old');
 		else changeIcon('bf');
+	}
+
+	public function swapRobloxIcon() {
+		if(isRobloxIcon = !isRobloxIcon) changeIcon('nike-man');
+		else changeIcon('nichael');
 	}
 
 	private var iconOffsets:Array<Float> = [0, 0];

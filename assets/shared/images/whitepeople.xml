@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="white people.png">
+<SubTexture name="white people be like0000" x="0" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0001" x="1924" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0002" x="3848" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0003" x="5772" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0004" x="0" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0005" x="1924" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0006" x="3848" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0007" x="5772" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0008" x="0" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0009" x="1924" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0010" x="3848" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0011" x="5772" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0012" x="0" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0013" x="1924" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0014" x="3848" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0015" x="5772" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0016" x="0" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0017" x="1924" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0018" x="3848" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0019" x="5772" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0020" x="0" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0021" x="1924" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="white people be like0022" x="3848" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+</TextureAtlas>

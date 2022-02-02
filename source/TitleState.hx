@@ -62,13 +62,14 @@ class TitleState extends MusicBeatState
 	var textGroup:FlxGroup;
 	var bob:FlxSprite;
 	var kys:FlxSprite;
+	public static var kysVariable:Bool = false;
 
 	var curWacky:Array<String> = [];
 
 	var wackyImage:FlxSprite;
 
-	var easterEggEnabled:Bool = true; //Disable this to hide the easter egg
-	var easterEggKeyCombination:Array<FlxKey> = [FlxKey.B, FlxKey.B]; //bb stands for bbpanzu cuz he wanted this lmao
+	var easterEggEnabled:Bool = true;
+	var easterEggKeyCombination:Array<FlxKey> = [FlxKey.S, FlxKey.H, FlxKey.A, FlxKey.G, FlxKey.G, FlxKey.Y];
 	var lastKeysPressed:Array<FlxKey> = [];
 
 	var mustUpdate:Bool = false;
@@ -97,19 +98,19 @@ class TitleState extends MusicBeatState
 		#end
 		
 		#if (desktop && MODS_ALLOWED)
-		var path = "mods/" + Paths.currentModDirectory + "/images/gfDanceTitle.json";
+		var path = "mods/" + Paths.currentModDirectory + "/images/I_love_shuttle_man.json";
 		//trace(path, FileSystem.exists(path));
 		if (!FileSystem.exists(path)) {
-			path = "mods/images/gfDanceTitle.json";
+			path = "mods/images/I_love_shuttle_man.json";
 		}
 		//trace(path, FileSystem.exists(path));
 		if (!FileSystem.exists(path)) {
-			path = "assets/images/gfDanceTitle.json";
+			path = "assets/images/I_love_shuttle_man.json";
 		}
 		//trace(path, FileSystem.exists(path));
 		titleJSON = Json.parse(File.getContent(path));
 		#else
-		var path = Paths.getPreloadPath("images/gfDanceTitle.json");
+		var path = Paths.getPreloadPath("images/I_love_shuttle_man.json");
 		titleJSON = Json.parse(Assets.getText(path)); 
 		#end
 		
@@ -203,7 +204,8 @@ class TitleState extends MusicBeatState
 	}
 
 	var logoBl:FlxSprite;
-	var gfDance:FlxSprite;
+	var logoBlj:FlxSprite;
+	var shuttleDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
@@ -261,7 +263,7 @@ class TitleState extends MusicBeatState
 		add(bg);
 
 		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
-		
+		logoBlj = new FlxSprite(titleJSON.titlex, titleJSON.titley);
 		
 		#if (desktop && MODS_ALLOWED)
 		var path = "mods/" + Paths.currentModDirectory + "/images/logoBumpin.png";
@@ -274,10 +276,11 @@ class TitleState extends MusicBeatState
 			path = "assets/images/logoBumpin.png";
 		}
 		//trace(path, FileSystem.exists(path));
+		logoBlj.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
 		logoBl.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
 		#else
-		
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
+		logoBlj.frames = Paths.getSparrowAtlas('cool_logo');
 		#end
 		
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
@@ -287,33 +290,49 @@ class TitleState extends MusicBeatState
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
+		logoBlj.antialiasing = ClientPrefs.globalAntialiasing;
+		logoBlj.animation.addByPrefix('bump', 'logo bumpin', 24, false);
+		logoBlj.animation.play('bump');
+		logoBlj.updateHitbox();
+
 		swagShader = new ColorSwap();
-			gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
+			shuttleDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
 		
 		#if (desktop && MODS_ALLOWED)
-		var path = "mods/" + Paths.currentModDirectory + "/images/gfDanceTitle.png";
+		var path = "mods/" + Paths.currentModDirectory + "/images/I_love_shuttle_man.png";
 		//trace(path, FileSystem.exists(path));
 		if (!FileSystem.exists(path)){
-			path = "mods/images/gfDanceTitle.png";
+			path = "mods/images/I_love_shuttle_man.png";
 		//trace(path, FileSystem.exists(path));
 		}
 		if (!FileSystem.exists(path)){
-			path = "assets/images/gfDanceTitle.png";
+			path = "assets/images/I_love_shuttle_man.png";
 		//trace(path, FileSystem.exists(path));
 		}
-		gfDance.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
+		shuttleDance.frames = FlxAtlasFrames.fromSparrow(BitmapData.fromFile(path),File.getContent(StringTools.replace(path,".png",".xml")));
 		#else
 		
-		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
+		shuttleDance.frames = Paths.getSparrowAtlas('I_love_shuttle_man');
 		#end
-			gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-			gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-	
-		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
-		add(gfDance);
-		gfDance.shader = swagShader.shader;
-		add(logoBl);
-		//logoBl.shader = swagShader.shader;
+		shuttleDance.animation.addByPrefix('shuttle dance', 'bruh', 24, false);
+
+		if (ClientPrefs.ShuttleMan)
+		{
+			add(logoBl);
+			logoBl.shader = swagShader.shader;
+		}
+		if (!ClientPrefs.ShuttleMan)
+		{
+			add(logoBlj);
+			logoBlj.shader = swagShader.shader;
+		}
+		shuttleDance.antialiasing = ClientPrefs.globalAntialiasing;
+		shuttleDance.scale.set(2, 2);
+		if (ClientPrefs.ShuttleMan)
+			{
+				add(shuttleDance);
+			}
+		shuttleDance.shader = swagShader.shader;
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
 		#if (desktop && MODS_ALLOWED)
@@ -482,26 +501,15 @@ class TitleState extends MusicBeatState
 							}
 						}
 
-						/*if(!isDifferent) {
-							trace('Easter egg triggered!');
+						if(!isDifferent) {
+							trace('https://cdn.discordapp.com/attachments/929974848426479637/937546075387076628/unknown.png');
 							FlxG.save.data.psykaEasterEgg = !FlxG.save.data.psykaEasterEgg;
 							FlxG.sound.play(Paths.sound('secretSound'));
 
-							var black:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
-							black.alpha = 0;
-							add(black);
-
-							FlxTween.tween(black, {alpha: 1}, 1, {onComplete:
-								function(twn:FlxTween) {
-									FlxTransitionableState.skipNextTransIn = true;
-									FlxTransitionableState.skipNextTransOut = true;
-									MusicBeatState.switchState(new TitleState());
-								}
-							});
-							lastKeysPressed = [];
-							closedState = true;
-							transitioning = true;
-						}*/
+							var pipalovsky:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('pipalovsky'));
+							pipalovsky.antialiasing = ClientPrefs.globalAntialiasing;
+							add(pipalovsky);
+						}
 					}
 				}
 			}
@@ -564,13 +572,11 @@ class TitleState extends MusicBeatState
 		if(logoBl != null) 
 			logoBl.animation.play('bump', true);
 
-		if(gfDance != null) {
-			danceLeft = !danceLeft;
+		if(logoBlj != null) 
+			logoBlj.animation.play('bump', true);
 
-			if (danceLeft)
-				gfDance.animation.play('danceRight');
-			else
-				gfDance.animation.play('danceLeft');
+		if(shuttleDance != null) {
+			shuttleDance.animation.play('shuttle dance', true);
 		}
 
 		if(!closedState) {
@@ -579,50 +585,54 @@ class TitleState extends MusicBeatState
 			{
 				case 1:
 					createCoolText(['benju', 'gangster spongebob', 'callie', 'dragonflame42']);
-				case 3:
-					addMoreText('present');
-				case 4:
-					deleteCoolText();
-				case 5:
-					createCoolText(['A cool rip off'], -40);
 				case 6:
+					addMoreText('present');
+				case 8:
+					deleteCoolText();
+				case 10:
+					createCoolText(['A cool rip off'], -40);
+				case 12:
 					addMoreText('of the', -40);
-				case 7:
+				case 14:
 					addMoreText('bob mod', -40);
 					if (FlxG.random.bool(10))
 						{
 							kys.visible = true;
+							kysVariable = true;
 						}
 					else 
 						{
 							bob.visible = true;
 						}
-				case 8:
+				case 16:
 					deleteCoolText();
 					bob.visible = false;
 					kys.visible = false;
-				case 9:
+				case 18:
 					createCoolText([curWacky[0]]);
-				case 11:
+				case 22:
 					addMoreText(curWacky[1]);
-				case 12:
+				case 24:
 					deleteCoolText();
-				case 13:
+				case 26:
 					addMoreText('I');
-				case 14:
+				case 28:
 					addMoreText('LOVE');
-				case 15:
-					addMoreText('SHUTTLE MAN!!!');
-				case 16:
+				case 30:
+					if (ClientPrefs.ShuttleMan)
+						{
+							addMoreText('SHUTTLE MAN!!!');
+						}
+				case 32:
 					deleteCoolText();
 					addMoreText('he');
-				case 17:
+				case 34:
 					addMoreText('is so');
-				case 18:
+				case 36:
 					addMoreText('awesome');
-				case 19:
+				case 38:
 					deleteCoolText();
-				case 20:
+				case 39:
 					skipIntro();
 			}
 		}

@@ -38,25 +38,33 @@ class FlashingState extends MusicBeatState
 	}
 
 	override function update(elapsed:Float)
-	{
-		if(!leftState) {
-			var back:Bool = controls.BACK;
-			if (controls.ACCEPT || back) {
-				leftState = true;
-				FlxTransitionableState.skipNextTransIn = true;
-				FlxTransitionableState.skipNextTransOut = true;
-				if(!back) {
-					FlxG.sound.play(Paths.sound('cancelMenu'));
-					FlxTween.tween(warnText, {alpha: 0}, 1, {
-						onComplete: function (twn:FlxTween) {
-							MusicBeatState.switchState(new TitleState());
-						}
-					});
-				} else {
-					System.exit(0);
-						}
+		{
+			if(!leftState) {
+				var ACCEPT:Bool = controls.ACCEPT;
+				if (controls.BACK || ACCEPT) {
+					leftState = true;
+					FlxTransitionableState.skipNextTransIn = true;
+					FlxTransitionableState.skipNextTransOut = true;
+					if(!ACCEPT) {
+						ClientPrefs.ShuttleMan = false;
+						ClientPrefs.saveSettings();
+						FlxG.sound.play(Paths.sound('cuh'));
+						FlxTween.tween(warnText, {alpha: 0}, 1, {
+							onComplete: function (twn:FlxTween) {
+								MusicBeatState.switchState(new TitleState());
+							}
+						});
+					} else {
+						FlxG.sound.play(Paths.sound('cuh'));
+						FlxTween.tween(warnText, {alpha: 0}, 1, {
+							onComplete: function (twn:FlxTween) {
+								MusicBeatState.switchState(new TitleState());
+							}
+						});
 					}
 				}
+			}
 			super.update(elapsed);
 		}
 	}
+	

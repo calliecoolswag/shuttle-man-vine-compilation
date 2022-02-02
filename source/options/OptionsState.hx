@@ -23,6 +23,7 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxTimer;
 import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
+import flash.system.System;
 import Controls;
 
 using StringTools;
@@ -34,6 +35,7 @@ class OptionsState extends MusicBeatState
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
 	public static var ingame:Bool = false;
+	public static var poppyplaytimenfts:Int = 0;
 
 	function openSelectedSubstate(label:String) {
 		switch(label) {
@@ -60,13 +62,21 @@ class OptionsState extends MusicBeatState
 		DiscordClient.changePresence("Options Menu", null);
 		#end
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		var bg:FlxSprite;
+		if(ClientPrefs.ShuttleMan)
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+			}
+		else 
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuBGwithouttheshittle'));
+			}
 		bg.color = 0xFFea71fd;
-		bg.setGraphicSize(Std.int(bg.width * 1.1));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
+
 
 		grpOptions = new FlxTypedGroup<Alphabet>();
 		add(grpOptions);
@@ -98,7 +108,7 @@ class OptionsState extends MusicBeatState
 	override function update(elapsed:Float) {
 		super.update(elapsed);
 
-		if (controls.UI_UP_P) {
+		if (controls.UI_UP_P)  {
 			changeSelection(-1);
 		}
 		if (controls.UI_DOWN_P) {
@@ -109,7 +119,20 @@ class OptionsState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			if (ingame)
 				FlxG.switchState(new PlayState());
-				else
+			else if (!ClientPrefs.ShuttleMan)
+				{
+					poppyplaytimenfts++;
+					if(poppyplaytimenfts==1)
+						
+						TitleState.initialized = false;
+						TitleState.closedState = false;
+						FlxG.sound.music.fadeOut(0.3);
+						FlxG.camera.fade(FlxColor.BLACK, 0.5, false, FlxG.resetGame, false);
+
+					if(poppyplaytimenfts <= 2)
+						FlxG.switchState(new MainMenuState());
+				}
+			else
 				FlxG.switchState(new MainMenuState());
 		}
 		if (controls.ACCEPT) {

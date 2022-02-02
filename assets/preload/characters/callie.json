@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				137,
+				-147
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "callie left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				-255
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "callie down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-610,
+				266
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "callie up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-524,
+				-166
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "callie right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-446,
+				-233
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "callie idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/callie",
+	"position": [
+		0,
+		-20
+	],
+	"healthicon": "callie",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		0,
+		90
+	],
+	"sing_duration": 6.1,
+	"scale": 3.50000000000001
+}

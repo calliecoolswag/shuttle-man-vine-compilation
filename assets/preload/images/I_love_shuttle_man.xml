@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="I love shuttle man.png">
+	<!-- Created with Adobe Animate version 21.0.8.42666 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bruh0000" x="0" y="0" width="263" height="206" frameX="0" frameY="-98" frameWidth="343" frameHeight="305"/>
+	<SubTexture name="bruh0001" x="263" y="0" width="233" height="305" frameX="-68" frameY="0" frameWidth="343" frameHeight="305"/>
+	<SubTexture name="bruh0002" x="496" y="0" width="263" height="206" frameX="-80" frameY="-98" frameWidth="343" frameHeight="305"/>
+	<SubTexture name="bruh0003" x="759" y="0" width="234" height="305" frameX="-38" frameY="0" frameWidth="343" frameHeight="305"/>
+</TextureAtlas>

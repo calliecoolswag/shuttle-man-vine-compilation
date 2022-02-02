@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="among.png"><SubTexture name="among kill0000" x="0" y="0" width="123" height="77" frameX="0" frameY="0" frameWidth="123" frameHeight="77" />
+<SubTexture name="among down0000" x="123" y="0" width="131" height="93" frameX="0" frameY="0" frameWidth="131" frameHeight="93" />
+<SubTexture name="among idle0000" x="0" y="93" width="123" height="75" frameX="0" frameY="0" frameWidth="123" frameHeight="75" />
+<SubTexture name="among left0000" x="123" y="93" width="177" height="85" frameX="0" frameY="0" frameWidth="177" frameHeight="85" />
+<SubTexture name="among right0000" x="0" y="178" width="174" height="71" frameX="0" frameY="0" frameWidth="174" frameHeight="71" />
+<SubTexture name="among up0000" x="174" y="178" width="172" height="90" frameX="0" frameY="0" frameWidth="172" frameHeight="90" />
+</TextureAtlas>

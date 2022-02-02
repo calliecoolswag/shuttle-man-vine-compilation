@@ -55,9 +55,16 @@ class BaseOptionsMenu extends MusicBeatSubstate
 		DiscordClient.changePresence(rpcTitle, null);
 		#end
 		
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		var bg:FlxSprite;
+		if(ClientPrefs.ShuttleMan)
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+			}
+		else 
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuBGwithouttheshittle'));
+			}
 		bg.color = 0xFFea71fd;
-		bg.setGraphicSize(Std.int(bg.width * 1.1));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;

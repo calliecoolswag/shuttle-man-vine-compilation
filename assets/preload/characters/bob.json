@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "bob_LEFT",
-			"indices": []
+			"indices": [],
+			"name": "bob_LEFT"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "bob_DOWN",
-			"indices": []
+			"indices": [],
+			"name": "bob_DOWN"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "bob_UP",
-			"indices": []
+			"indices": [],
+			"name": "bob_UP"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "bob_RIGHT",
-			"indices": []
+			"indices": [],
+			"name": "bob_RIGHT"
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"anim": "idle",
 			"fps": 24,
-			"name": "bob_idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "bob_idle"
 		}
 	],
 	"no_antialiasing": false,

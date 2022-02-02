@@ -1,0 +1,69 @@
+{
+	"song": {
+		"speed": 1.8,
+		"stage": "Renory's House",
+		"player1": "bf",
+		"player2": "renory",
+		"player3": null,
+		"events": [
+			[
+				76800,
+				[
+					[
+						"Change Character",
+						"dad",
+						"bambi"
+					]
+				]
+			],
+			[
+				82285.7142857142,
+				[
+					[
+						"Change Character",
+						"dad",
+						"renory"
+					]
+				]
+			],
+			[
+				104914.285714286,
+				[
+					[
+						"Change Character",
+						"gf",
+						"little-man"
+					]
+				]
+			],
+			[
+				109285.714285714,
+				[
+					[
+						"Change Character",
+						"gf",
+						"gf"
+					]
+				]
+			],
+			[
+				121200,
+				[
+					[
+						"Change Scroll Speed",
+						"9",
+						"3"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 175,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Renory"
+	}
+}

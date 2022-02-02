@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-173,
+				-263
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "bf-callie left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-128,
+				-347
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "bf-callie down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-330,
+				-244
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "bf-callie up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-364,
+				-251
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "bf-callie right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-184,
+				-171
+			],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "bf-callie miss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-184,
+				-171
+			],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "bf-callie miss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-184,
+				-171
+			],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "bf-callie miss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-184,
+				-171
+			],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "bf-callie miss"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-286,
+				-376
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "bf-callie idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/bf-callie",
+	"position": [
+		0,
+		120
+	],
+	"healthicon": "bf-callie",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		162,
+		232
+	],
+	"camera_position": [
+		0,
+		190
+	],
+	"sing_duration": 6.1,
+	"scale": 3
+}

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				93,
+				-285
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				137,
+				-147
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-280,
+				216
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-304,
+				-226
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-16,
+				-173
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Callie3D",
+	"position": [
+		0,
+		-20
+	],
+	"healthicon": "callie3d",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		-540,
+		90
+	],
+	"sing_duration": 6.1,
+	"scale": 3.50000000000001
+}

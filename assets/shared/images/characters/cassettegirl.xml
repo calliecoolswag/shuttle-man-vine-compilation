@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="cassette girl.png"><SubTexture name="cassette girl idle0000" x="0" y="0" width="421" height="680" frameX="0" frameY="0" frameWidth="421" frameHeight="680" />
+</TextureAtlas>

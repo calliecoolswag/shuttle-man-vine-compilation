@@ -16,8 +16,8 @@
 				0,
 				2
 			],
-			"loop_name": "Bob Idle",
-			"idle_name": "Bob Talk"
+			"loop_name": "Bob Talk",
+			"idle_name": "Bob Idle"
 		},
 		{
 			"loop_offsets": [

@@ -193,8 +193,8 @@ class NoteOffsetState extends MusicBeatState
 		add(changeModeText);
 		updateMode();
 
-		Conductor.changeBPM(128.0);
-		FlxG.sound.playMusic(Paths.music('offsetSong'), 1, true);
+		Conductor.changeBPM(90.0);
+		FlxG.sound.playMusic(Paths.music('I_think_most_of_you_could_agree_that_FNF_songs_have_vocals_in_them'), 1, true);
 
 		super.create();
 	}

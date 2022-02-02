@@ -9,7 +9,7 @@ local allowCountdown = false
 local allowEnd = false
 
 function onEndSong()
-	if not allowEnd and isStoryMode then --Block the next song lol
+	if not allowEnd and isStoryMode then
 		startVideo('this_is_so_sad_2');
 		allowEnd = true;
 		return Function_Stop;

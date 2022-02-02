@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ron.png"><SubTexture name="ron react0000" x="0" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
+<SubTexture name="ron react0001" x="1284" y="0" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
+<SubTexture name="ron smash0000" x="0" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
+<SubTexture name="ron smash0001" x="1284" y="724" width="1284" height="724" frameX="0" frameY="0" frameWidth="1284" frameHeight="724" />
+</TextureAtlas>

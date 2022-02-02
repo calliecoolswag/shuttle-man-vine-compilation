@@ -25,7 +25,7 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '1.1'; //This is also used for Discord RPC
+	public static var psychEngineVersion:String = '1.5'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -49,7 +49,7 @@ class MainMenuState extends MusicBeatState
 	{
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Main Menu", null);
 		#end
 
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
@@ -68,7 +68,17 @@ class MainMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+
+		var bg:FlxSprite;
+
+		if(ClientPrefs.ShuttleMan)
+			{
+		bg = new FlxSprite().loadGraphic(Paths.image('menuBG'));
+			}
+			else
+			{
+		bg = new FlxSprite().loadGraphic(Paths.image('menuBGwithouttheshittle'));
+			}
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
@@ -81,7 +91,14 @@ class MainMenuState extends MusicBeatState
 		add(camFollow);
 		add(camFollowPos);
 
-		magenta = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
+		if(ClientPrefs.ShuttleMan)
+			{
+			magenta = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+			}
+		else 
+			{
+			magenta = new FlxSprite().loadGraphic(Paths.image('menuBGwithouttheshittle'));
+			}
 		magenta.scrollFactor.set(0, yScroll);
 		magenta.setGraphicSize(Std.int(magenta.width * 1.175));
 		magenta.updateHitbox();
@@ -102,8 +119,7 @@ class MainMenuState extends MusicBeatState
 
 		for (i in 0...optionShit.length)
 		{
-			var offset:Float = 108 - (Math.max(optionShit.length, 4) - 4) * 80;
-			var menuItem:FlxSprite = new FlxSprite(0, (i * 140)  + offset);
+			var menuItem:FlxSprite = new FlxSprite(0, 60 + (i * 160));
 			menuItem.scale.x = scale;
 			menuItem.scale.y = scale;
 			menuItem.frames = Paths.getSparrowAtlas('mainmenu/menu_' + optionShit[i]);
@@ -113,35 +129,45 @@ class MainMenuState extends MusicBeatState
 			menuItem.ID = i;
 			menuItem.screenCenter(X);
 			menuItems.add(menuItem);
-			var scr:Float = (optionShit.length - 4) * 0.135;
-			if(optionShit.length < 6) scr = 0;
-			menuItem.scrollFactor.set(0, scr);
+			menuItem.scrollFactor.set();
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
-			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
+			menuItem.setGraphicSize(Std.int(menuItem.width * 1.1));
 			menuItem.updateHitbox();
 		}
 
+
 		FlxG.camera.follow(camFollowPos, null, 1);
-
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "psych engine v0.5.1", 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "fnf vs shuttle man v" + Application.current.meta.get('version'), 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-
-		// NG.core.calls.event.logEvent('swag').send();
+		if (FlxG.random.bool(10))
+			{
+				var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Game version:0.2.7.1", 12);
+				versionShit.scrollFactor.set();
+				versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				add(versionShit);
+				var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Tr1NgleEngine version: 1.6.0", 12);
+				versionShit.scrollFactor.set();
+				versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				add(versionShit);
+			}
+		else 
+			{
+				var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "psych engine v0.5.1", 12);
+				versionShit.scrollFactor.set();
+				versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				add(versionShit);
+				var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "fnf vs shuttle man v" + Application.current.meta.get('version'), 12);
+				versionShit.scrollFactor.set();
+				versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				add(versionShit);
+			}
 
 		changeItem();
 
 		#if ACHIEVEMENTS_ALLOWED
 		Achievements.loadAchievements();
 		var leDate = Date.now();
-		if (leDate.getDay() == 5 && leDate.getHours() >= 18) {
-			var achieveID:Int = Achievements.getAchievementIndex('friday_night_play');
-			if(!Achievements.isAchievementUnlocked(Achievements.achievementsStuff[achieveID][2])) { //It's a friday night. WEEEEEEEEEEEEEEEEEE
+		if (leDate.getDay() == 6 && leDate.getHours() >= 8 || leDate.getDay() == 7 && leDate.getHours() >= 8) {
+			var achieveID:Int = Achievements.getAchievementIndex('chill_on_a_weekend');
+			if(!Achievements.isAchievementUnlocked(Achievements.achievementsStuff[achieveID][2])) {
 				Achievements.achievementsMap.set(Achievements.achievementsStuff[achieveID][2], true);
 				giveAchievement();
 				ClientPrefs.saveSettings();
@@ -155,9 +181,9 @@ class MainMenuState extends MusicBeatState
 	#if ACHIEVEMENTS_ALLOWED
 	// Unlocks "Freaky on a Friday Night" achievement
 	function giveAchievement() {
-		add(new AchievementObject('friday_night_play', camAchievement));
-		FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
-		trace('Giving achievement "friday_night_play"');
+		add(new AchievementObject('chill_on_a_weekend', camAchievement));
+		FlxG.sound.play(Paths.sound('cuh'), 1);
+		trace('chillin on a weekend like usual...');
 	}
 	#end
 

@@ -1,8 +1,8 @@
 {
 	"songs": [
-		["Shuttle Man", "Shittle", [255, 255, 255]],
-		["Racquet", "Shittle", [255, 255, 255]],
-		["Balk", "Shittle", [255, 255, 255]],
+		["Shuttle Man", "shittle", [255, 255, 255]],
+		["Racquet", "shittle", [255, 255, 255]],
+		["Balk", "shittle", [255, 255, 255]],
 		["Dead Horse", "bob", [255, 255, 255]]
 	],
 

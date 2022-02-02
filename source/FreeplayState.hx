@@ -61,7 +61,7 @@ class FreeplayState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Freeplay Menu", null);
 		#end
 
 		for (i in 0...WeekData.weeksList.length) {
@@ -98,7 +98,14 @@ class FreeplayState extends MusicBeatState
 			}
 		}*/
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		if(ClientPrefs.ShuttleMan)
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+			}
+		else 
+			{
+				bg = new FlxSprite().loadGraphic(Paths.image('menuBGwithouttheshittle'));
+			}
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
@@ -322,7 +329,13 @@ class FreeplayState extends MusicBeatState
 			}*/
 			trace(poop);
 
-			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+			var thingy:String = '';
+			if (!ClientPrefs.ShuttleMan && curSelected <= 3 && curSelected != 0)
+				thingy = '-noshuttleman1984';
+			if (!ClientPrefs.ShuttleMan && curSelected <= 5 && curSelected != 0)
+				thingy = '-noshuttleman1984';
+
+			PlayState.SONG = Song.loadFromJson(poop, songLowercase + thingy);
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = curDifficulty;
 

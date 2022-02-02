@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				13,
+				209
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				184
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-160,
+				60
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				71,
+				347
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-128,
+				164
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ShuttleManMusthave",
+	"position": [
+		20,
+		460
+	],
+	"healthicon": "shittle",
+	"flip_x": false,
+	"healthbar_colors": [
+		128,
+		255,
+		0
+	],
+	"camera_position": [
+		70,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
